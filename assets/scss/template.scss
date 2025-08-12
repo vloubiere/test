@@ -8,9 +8,8 @@
   justify-content: center;
 }
 
-// ADjust title size
 .hero-title, .site-title {
-  font-size: 7rem;      // Adjust as needed
-  text-align: left;
-  margin-left: 0;
+  font-size: 3rem;      /* Make the title bigger, adjust as needed */
+  text-align: left;     /* Align the title to the left */
+  margin-left: 0;       /* Remove any extra left margin */
 }
