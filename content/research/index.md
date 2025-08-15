@@ -37,14 +37,12 @@ sections:
       text: |
         <p>
         Epigenetics, the study of molecules and mechanisms that perpetuate alternative gene activity states in the context of the same DNA sequence, is an exciting field with important epistemological and biomedical implications, but the molecular mechanisms underlying epigenetic inheritance are still little understood. Polycomb group proteins are pleiotropic chromatin components that have been suggested to be capable of driving epigenetic inheritance and their dysregulation leads to cell fate changes and is associated with cancer. Recently, we discovered that a transient decrease in expression of a Polycomb gene can drive the formation of tumors of epigenetic nature, i.e. in the absence of DNA mutations. The goal of WaddingtonMemory is to decipher how epigenetic components can lead to stable changes in cell fate. Specifically, we will:
-        </p>
-        <p>
+        <br>
         <strong style="display:inline">Aim 1:</strong> Identify the molecular steps leading to epigenetic cell fate derailment following transient Polycomb protein depletion in Drosophila. We will perform a time-course study using bulk and single-cell multiomic and imaging approaches in order to dissect the dynamics of cell fate transformation. <br>
         <strong style="display:inline">Aim 2:</strong> Identify the Polycomb-targets leading to cell fate dysregulation and decipher their mechanistic role. We will test candidate factors identified in Aim 1 in order to identify those that drive cell fate derailment and to elucidate their mode of action.
         <br>
-        <strong style="display:inline">Aim 3:</strong> Test the role of epigenetic inheritance in mammalian cell differentiation. We will analyse the role of epigenetic inheritance in mouse gastruloids, an in vitro system that reflects cell differentiation events typically found in early embryogenesis. <br> 
-        </p>
-        <p>
+        <strong style="display:inline">Aim 3:</strong> Test the role of epigenetic inheritance in mammalian cell differentiation. We will analyse the role of epigenetic inheritance in mouse gastruloids, an in vitro system that reflects cell differentiation events typically found in early embryogenesis.
+        <br>
         Together, this groundbreaking project will reveal how epigenetic components drive cell fate derailment and it will establish robust paradigms that can be utilized by the scientific community to discriminate between epigenetic inheritance and DNA sequence-mediated cell transformation.
         </p>
       design:
@@ -74,6 +72,24 @@ sections:
     design:
       spacing:
         padding: ['0', '0', '10px', '0']
+  - block: slider
+    content:
+      slides:
+      - title: Super-resolution microscopy
+        content: See related articles!
+        align: right
+        background:
+          image:
+            filename: SuperResolution_QS.jpg
+            filters:
+              brightness: 0.7
+          position: right
+          color: '#666'
+        link:
+          icon: graduation-cap
+          icon_pack: fas
+          text: Link
+          url: ../contact/
   - block: slider
     content:
       slides:
