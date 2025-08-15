@@ -36,7 +36,7 @@ sections:
 
         <div class="research-flex">
           <div class="research-flex-item left">
-            <img src="/media/fly_TEI.png" alt="Epigenetic inheritance of alternative chromatin states">
+            <img src="media/fly_TEI.png" alt="Epigenetic inheritance of alternative chromatin states">
             <div class="research-grid-caption">
               Epigenetic inheritance of alternative chromatin states
             </div>
