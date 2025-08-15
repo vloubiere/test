@@ -1,23 +1,199 @@
-// Make page header alignment consistent with widget page header alignment
-.universal-wrapper h1 {
-  text-align: center;
-}
-
-// Center the CTA shortcode button
-.cta-group {
-  justify-content: center;
-}
-
-.navbar-brand {
-  font-size: 2.5rem;      /* Make the title bigger, adjust as needed */
-}
-
+/* ===== GLOBAL SETTINGS ===== */
+/* Width/padding of the website */
 .container, .container-fluid {
-  padding-left: 0 !important;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  max-width: 2400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.d-lg-inline-flex {
-  margin-left: 0 !important;
-  padding-left: 0 !important;
-  justify-content: flex-start !important;
+/* Center buttons */
+.cta-group { justify-content: center; }
+
+/* Responsive stacking for mobile */
+@media (max-width: 900px) {
+  .col-12 {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .card-simple {
+    max-width: 100%;
+    min-width: 0;
+  }
+}
+
+/* Define default font and weight */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+html, body, *:not(i):not([class*="fa"]):not([class*="icon"]) {
+  font-family: 'Montserrat', Arial, sans-serif !important;
+  font-weight: 300;
+  color: #000;
+  box-sizing: border-box;
+}
+
+/* ===== HEADING LINES AND SPACING ===== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', Arial, sans-serif !important;
+  letter-spacing: 0.02em  !important;
+  margin-top: 0.5rem !important;
+  text-align: left !important;
+}
+
+/* Add this to override Bootstrap's mb-0 class for all heading levels */
+h1.mb-0, h2.mb-0, h3.mb-0, h4.mb-0, h5.mb-0, h6.mb-0 {
+  margin-bottom: 0rem !important;
+}
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+/* Bold text */
+strong, b, .research-bold {
+  font-weight: 600 !important;
+}
+
+/* ===== HOME PAGE BUTTON ===== */
+/* CAVALLI LAB homepage button */
+.navbar-brand {
+  letter-spacing: 0.02em;
+  font-size: 2.5rem;
+}
+
+/* IGH logo */
+.navbar-brand::after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  background: url('/logos/IGH_logo.png');
+  background-size: 85px 60px;
+  background-repeat: no-repeat;
+  width: 85px;
+  height: 65px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+/* ===== WADDINGTON LANDSCAPE BANNER ===== */
+.tiny-banner {
+  width: 100vw;
+  aspect-ratio: 1600 / 450;
+  max-width: 100%;
+  height: auto;
+  min-height: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  display: block;
+  max-width: 2400px;
+}
+.subtitle-text {
+  font-size: 1.75rem; /* or whatever size you prefer */
+  font-weight: 300;
+  color: #222;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== RESEARCH BUTTONS ===== */
+.research-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+
+.research-flex-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Always center captions and content by default */
+  width: 100%;
+}
+
+.research-flex-item.left {
+  padding-left: 0rem;
+}
+
+.research-flex-item.right {
+  padding-right: 0rem;
+}
+
+/* Align only the image for left and right items */
+.research-flex-item.left img {
+  align-self: flex-start;
+}
+
+.research-flex-item.right img {
+  align-self: flex-end;
+}
+
+.research-flex-item img {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.research-grid-caption {
+  margin: 0.5em auto 0 auto;
+  font-size: 1.25rem;
+  max-width: 400px;
+  word-break: break-word;
+  white-space: normal;
+  font-weight: 300;
+  text-align: center; /* Ensure caption is always centered */
+}
+
+/* ===== LATEST NEWS ===== */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem; /* Adjust spacing between cards */
+}
+
+/* Existing card styles (keep) */
+.card-simple, .card {
+  flex: 1 1 180px; /* Grow to fill row, min width 180px */
+  max-width: 400px;
+  min-width: 400px;
+  margin: 0;
+  font-size: 0.95rem;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.article-banner {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  object-position: center top; /* or center center, or center bottom */
+  display: block;
+  border-radius: 8px;
+  background: #f5f5f5;
+}
+
+/* NEW: Add this for your news section */
+.col-12 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem; /* Adjust spacing between cards */
+  justify-content: flex-start; /* Align cards to the left */
+}
+
+/* ===== Publications ===== */
+/* Remove link from publication titles in the publication list */
+.pub-list-item > a {
+  pointer-events: none !important;
+  color: inherit !important;
+  text-decoration: none !important;
+  cursor: default !important;
+  font-weight: 600 !important;
 }
