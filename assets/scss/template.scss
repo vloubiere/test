@@ -114,20 +114,14 @@ strong, b, .research-bold {
   width: 100%;
 }
 
+/* Align only the image for left and right items */
 .research-flex-item.left {
   padding-left: 0rem;
+  align-self: flex-start;
 }
 
 .research-flex-item.right {
   padding-right: 0rem;
-}
-
-/* Align only the image for left and right items */
-.research-flex-item.left img {
-  align-self: flex-start;
-}
-
-.research-flex-item.right img {
   align-self: flex-end;
 }
 
@@ -188,12 +182,71 @@ strong, b, .research-bold {
   justify-content: flex-start; /* Align cards to the left */
 }
 
-/* ===== Publications ===== */
-/* Remove link from publication titles in the publication list */
-.pub-list-item > a {
+/* ===== PUBLICATIONS ===== */
+/* Disable only the publication TITLE link, keep PDFs/buttons clickable */
+.pub-list-item a[href^="/publication/"]:not([href$=".pdf"]):not([href*=".pdf?"]):not([href*="/files/"]):not(.btn) {
   pointer-events: none !important;
-  color: inherit !important;
-  text-decoration: none !important;
   cursor: default !important;
   font-weight: 600 !important;
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+/* Explicitly keep PDFs and action links interactive */
+.pub-list-item .pub-links a,
+.pub-list-item a[href$=".pdf"],
+.pub-list-item a[href*=".pdf?"],
+.pub-list-item a[href*="/files/"],
+.pub-list-item a.btn {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
+/* ===== RESEARCH PAGE ===== */
+/* Layout for research text + video */
+.research-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+/* Make text take ~55% and video ~45% on desktop */
+.research-text {
+  flex: 1 1 55%;
+  max-width: 60%;
+}
+
+.research-video {
+  flex: 1 1 45%;
+  max-width: 40%;
+}
+
+/* Responsive 16:9 video */
+.video-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9; /* modern browsers */
+  background: #000;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Stack on mobile */
+@media (max-width: 900px) {
+  .research-flex {
+    flex-direction: column;
+  }
+  .research-text,
+  .research-video {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
 }
