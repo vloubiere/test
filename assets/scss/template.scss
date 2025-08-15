@@ -184,12 +184,12 @@ strong, b, .research-bold {
 
 /* ===== PUBLICATIONS ===== */
 /* Disable only the publication TITLE link, keep PDFs/buttons clickable */
-.pub-list-item a[href^="/publication/"]:not([href$=".pdf"]):not([href*=".pdf?"]):not([href*="/files/"]):not(.btn) {
-  pointer-events: none !important;
-  cursor: default !important;
-  font-weight: 600 !important;
-  color: inherit !important;
-  text-decoration: none !important;
+.pub-list-item a[href*="/publication/"]:not([href$=".pdf"]):not([href*=".pdf?"]):not([href*="/files/"]):not(.btn) {
+pointer-events: none !important;
+cursor: default !important;
+font-weight: 600 !important;
+color: inherit !important;
+text-decoration: none !important;
 }
 
 /* Explicitly keep PDFs and action links interactive */

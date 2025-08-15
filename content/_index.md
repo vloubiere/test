@@ -42,13 +42,13 @@ sections:
             </div>
           </div>
           <div class="research-flex-item center">
-            <img src="/media/HiC_Micro.png" alt="3D organization and function of the genome">
+            <img src="media/HiC_Micro.png" alt="3D organization and function of the genome">
             <div class="research-grid-caption">
               3D organization and function of the genome
             </div>
           </div>
           <div class="research-flex-item right">
-            <img src="/media/cancer_ED.png" alt="Role of Polycomb Group Proteins in development and cancer">
+            <img src="media/cancer_ED.png" alt="Role of Polycomb Group Proteins in development and cancer">
             <div class="research-grid-caption">
               Polycomb Group Proteins in development and cancer
             </div>
