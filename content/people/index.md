@@ -9,10 +9,10 @@ sections:
     content:
       title: 
       subtitle: 
-      text: |
-        <div class="subtitle-text">
-          Meet the team
-        </div>
+      text:
+      #  <div class="subtitle-text">
+      #    Meet the team
+      #  </div>
     design:
       columns: '1'
       background:

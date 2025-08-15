@@ -36,28 +36,35 @@ sections:
 
         <div class="research-flex">
           <div class="research-flex-item left">
-            <img src="media/fly_TEI.png" alt="Epigenetic inheritance of alternative chromatin states">
-            <div class="research-grid-caption">
-              Epigenetic inheritance of alternative chromatin states
-            </div>
+            <a href="research/#research_topic_1">
+              <img src="media/HiC_Micro.png" alt="3D organization and function of the genome">
+              <div class="research-grid-caption">
+                3D organization and function of the genome
+              </div>
+            </a>
           </div>
           <div class="research-flex-item center">
-            <img src="media/HiC_Micro.png" alt="3D organization and function of the genome">
-            <div class="research-grid-caption">
-              3D organization and function of the genome
-            </div>
+            <a href="research/#research_topic_2">
+              <img src="media/fly_TEI.png" alt="Epigenetic inheritance of alternative chromatin states">
+              <div class="research-grid-caption">
+                Epigenetic inheritance of alternative chromatin states
+              </div>
+            </a>
           </div>
           <div class="research-flex-item right">
-            <img src="media/cancer_ED.png" alt="Role of Polycomb Group Proteins in development and cancer">
-            <div class="research-grid-caption">
-              Polycomb Group Proteins in development and cancer
-            </div>
+            <a href="research/#research_topic_3">
+              <img src="media/cancer_ED.png" alt="Role of Polycomb Group Proteins in development and cancer">
+              <div class="research-grid-caption">
+                Polycomb Group Proteins in development and cancer
+              </div>
+            </a>
           </div>
         </div>
     design:
       columns: '1'
       spacing:
         padding: ['40px', '0', '40px', '0']
+      css_class: home-research
 
   - block: collection
     content:

@@ -250,3 +250,32 @@ text-decoration: none !important;
     flex-basis: 100%;
   }
 }
+
+/* Anchoring links to research page */
+.anchor-target::before {
+  content: "";
+  display: block;
+  height: 0;
+  margin-top: 0;
+}
+
+@media (max-width: 900px) {
+  .anchor-target:target::before {
+    height: 90px;   /* mobile header height */
+    margin-top: -90px;
+  }
+}
+
+/* Side figure */
+.research-figure {
+  margin: 0;
+  max-width: 800px;
+}
+.research-caption {
+  font-size: 1rem;
+  text-align: left !important;
+  color: #666;
+  margin-top: 8px;
+  line-height: 1.4;
+}
+
