@@ -26,11 +26,21 @@ sections:
             <div class="video-container">
               <iframe src="https://www.youtube.com/embed/Pl44JjA--2k?start=1" frameborder="0" allowfullscreen title="Cavalli Lab Research Video"></iframe>
             </div>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/Pl44JjA--2k?start=1" frameborder="0" allowfullscreen title="Cavalli Lab Research Video"></iframe>
+            </div>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/Pl44JjA--2k?start=1" frameborder="0" allowfullscreen title="Cavalli Lab Research Video"></iframe>
+            </div>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/Pl44JjA--2k?start=1" frameborder="0" allowfullscreen title="Cavalli Lab Research Video"></iframe>
+            </div>
           </div>
         </div>
     design:
       spacing:
-        padding: ['40px', '0', '80px', '0']
+        padding: ['20px', '0', '40px', '0']
+        
   - block: markdown
     content:
       title:
@@ -45,15 +55,15 @@ sections:
         <strong style="display:inline">Together, this groundbreaking project will reveal how epigenetic components drive cell fate derailment and it will establish robust paradigms that can be utilized by the scientific community to discriminate between epigenetic inheritance and DNA sequence-mediated cell transformation.</strong>
         </p>
       design:
-      spacing:
-        padding: ['40px', '0', '80px', '0']
+        spacing:
+          padding: ['20px', '0', '40px', '0']
+
   - block: markdown
     content:
       title:
       text: |
         <h1 id="research_topic_3" class="anchor-target">Mechanisms of Polycomb-mediated genome regulation</h1>
         <div class="research-flex">
-          <div class="research-text">
             <p>
             Polycomb group (PcG) and trithorax group (trxG) proteins are key regulators of the expression of major developmental genes. PcG proteins are able to silence gene expression, while trxG proteins counteract gene silencing in the appropriate cells. The current model proposes that a sequence-specific DNA binding protein called PHO binds at so-called Polycomb response elements (PREs). PHO might recruit the PcG complex called PRC2, which contains the core subunits E(z), a histone methyltransferase that trimethylates histone H3 lysine 27 (H3K27me3), Su(z)12, Esc and Nurf55. H3K27me3 might then be recognized by the chromo domain of the PC subunits of PRC1, which also contains Ph, PSC and Sce/dRing. Once recruited, PcG complexes can propagate silencing through cell division. Genome-wide mapping studies have shown that PcG target genes encode for components controlling major signalling pathways and, importantly, PcG misexpression has also been associated with many cancer types, including breast and prostate cancer.
             </p>
@@ -63,22 +73,24 @@ sections:
             <p>
             We would like to understand the molecular mechanisms of action of these factors, the role of regulation of higher order chromatin structure and nuclear organization in gene regulation, and the key molecular pathways that are mobilized by these proteins to coordinate the regulation of cell differentiation with that of cell proliferation. In particular, our research aims at (1) understanding, on a genome-wide scale, how these proteins are targeted to DNA and what are the consequences of this targeting on chromatin structure (2) understanding the effect of PcG proteins on cell proliferation, cell differentiation and cell polarity, and to dissecting the key components regulated by PcG proteins to modulate these pathways in specific tissues and developmental processes; (3) identifying the rules governing the distribution of their target genes in the cell nucleus and the effect of this organization on gene expression.
             </p>
-          </div>
           <figure class="research-figure">
             <img src="../media/FULL_ED.png" alt="Polycomb pathway schematic" class="research-side-image">
             <figcaption class="research-caption">Polycomb-mediated cancers in the developping eye-antennal imaginal disc of Drosophila. </figcaption>
           </figure>
         </div>
       design:
-      spacing:
-        padding: ['40px', '0', '80px', '0']
+        spacing:
+          padding: ['40px', '0', '80px', '0']
+
   - block: markdown
     content:
-      title: Methods used in our lab
-      text: ""
+      title:
+      text: 
+        <h1 id="research_topic_4" class="anchor-target">Methods used in our lab</h1>
     design:
       spacing:
-        padding: ['0', '0', '10px', '0']
+        padding: ['60px', '0', '10px', '0']
+
   - block: slider
     content:
       slides:

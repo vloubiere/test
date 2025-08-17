@@ -24,6 +24,17 @@
   src: url('../fonts/montserrat-v30-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+/* ===== BUTTONS FONT COLOR ===== */
+/* Ensure white text on primary buttons in all link states */
+.btn.btn-primary,
+.btn.btn-primary:link,
+.btn.btn-primary:visited,
+.btn.btn-primary:hover,
+.btn.btn-primary:active,
+.btn.btn-primary:focus {
+  color: #fff !important;
+}
+
 /* ===== GLOBAL SETTINGS ===== */
 /* Width/padding of the website */
 .container, .container-fluid {
@@ -58,17 +69,12 @@ html, body, *:not(i):not([class*="fa"]):not([class*="icon"]) {
 }
 
 /* ===== HEADING LINES AND SPACING ===== */
-h1, h2, h3, h4, h5, h6 {
+h1.mb-0, h2.mb-0, h3.mb-0, h4.mb-0, h5.mb-0, h6.mb-0 {
   font-family: 'Montserrat', Arial, sans-serif !important;
   letter-spacing: 0.02em  !important;
-  margin-top: 0.5rem !important;
   text-align: left !important;
-}
-
-/* Add this to override Bootstrap's mb-0 class for all heading levels */
-h1.mb-0, h2.mb-0, h3.mb-0, h4.mb-0, h5.mb-0, h6.mb-0 {
-  margin-top: -0.5rem !important;
-  margin-bottom: 0rem !important;
+  margin-top: 0.5rem !important;
+  margin-bottom: -1.5rem !important;
 }
 h1 { font-size: 2.5rem; }
 h2 { font-size: 2rem; }
@@ -120,54 +126,41 @@ strong, b, .research-bold {
   font-weight: 300;
   color: #222;
   margin-top: 0.5rem;
+  margin-left: 2rem;
   margin-bottom: 1.5rem;
 }
 
 /* ===== RESEARCH BUTTONS ===== */
-.home-research {  
-  margin-top: 0.25rem;
-}
-.home-research h1.mb-0 {
-  margin-bottom: -0.75rem !important;  /* reduce space below title */
-}
-
 .research-flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;  /* nice spacing */
   align-items: flex-start;
+  flex-wrap: nowrap;               /* prevent wrapping until absolutely needed */
+  gap: 2rem;
   width: 100%;
-  max-width: 100vw;
-  box-sizing: border-box;
+  max-width: 2400px;               /* optional: consistent with .container */
+  margin: 0 auto;
+  padding-left: 3vw;
+  padding-right: 3vw;
 }
 
 .research-flex-item {
+  margin-top: -1.5rem;
+  flex: 1;                         /* grow all equally */
   display: flex;
   flex-direction: column;
-  margin-top: -1.25rem;
-  align-items: center; /* Always center captions and content by default */
-  width: 100%;
+  align-items: center;
 }
 
-/* Align only the image for left and right items */
-.research-flex-item.left {
-  padding-left: 0rem;
-  align-self: flex-start;
-}
-
-.research-flex-item.right {
-  padding-right: 0rem;
-  align-self: flex-end;
-}
-
+/* Ensure images are always equal size and aligned at top */
 .research-flex-item img {
   width: 300px;
   height: auto;
   display: block;
-  margin: 0 auto;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem auto; /* same margin on all sides for consistency */
 }
 
+/* Captions are always centered, independent of image height */
 .research-grid-caption {
   margin: 0.5em auto 0 auto;
   font-size: 1.25rem;
@@ -175,10 +168,14 @@ strong, b, .research-bold {
   word-break: break-word;
   white-space: normal;
   font-weight: 300;
-  text-align: center; /* Ensure caption is always centered */
+  text-align: center;
 }
 
 /* ===== LATEST NEWS ===== */
+.home-news h1.mb-0 {
+  margin-bottom: 0rem !important;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -234,6 +231,44 @@ text-decoration: none !important;
 .pub-list-item a.btn {
   pointer-events: auto !important;
   cursor: pointer !important;
+}
+
+/* ===== FUNDERS BUTTONS ===== */
+.funders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2rem;
+  justify-items: center;   /* center logo inside each cell */
+  align-items: center;
+  width: 100%;
+}
+
+.funders-grid a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;             /* make the link stretch with its grid cell */
+}
+
+.funders-grid img {
+  height: 80px;          /* all logos exactly 60px tall */
+  width: auto;           /* auto-scale width to keep aspect ratio */
+  object-fit: contain;
+  filter: grayscale(20%);
+  transition: filter 0.3s;
+}
+
+.funders-grid img:hover {
+  filter: none;
+}
+
+/* ===== MEET THE TEAM BUTTON ===== */
+/* Make homepage CTA button larger */
+.cta-group .btn {
+  font-size: 1.25rem;     /* larger text */
+  border-radius: 8px;     /* optional: rounder look */
+  margin-top: -2rem;
+  margin-bottom: -4rem;
 }
 
 /* ===== RESEARCH PAGE ===== */
@@ -340,8 +375,8 @@ a[aria-label="orcid"] .fa-orcid {
 .people-person {
   display: flex;
   flex-direction: row;
-  align-items: center;       /* keeps text aligned with image center */
-  text-align: center;          /* text feels cleaner left-aligned in row */
+  align-items: left;       /* keeps text aligned with image center */
+  text-align: left !important;          /* text feels cleaner left-aligned in row */
   min-width: 180px;
   max-width: 250px;
   min-height: 180px;
@@ -355,23 +390,7 @@ a[aria-label="orcid"] .fa-orcid {
   height: 120px;
   margin-right: 0.75rem;     /* slightly tighter than 1rem */
   margin-top: 0;             /* no extra space above avatar itself */
-  margin-bottom: -1rem;
+  margin-bottom: -1.5rem;
   flex-shrink: 0;
   border-radius: 50%;        /* if you want circular portraits */
-}
-
-/* Name + Role block */
-.people-person .portrait-title {
-  margin-top: 0.25rem;       /* reduce gap between image and text */
-  min-height: 3rem;          /* uniform text area without too much empty space */
-}
-
-/* Ensure white text on primary buttons in all link states */
-.btn.btn-primary,
-.btn.btn-primary:link,
-.btn.btn-primary:visited,
-.btn.btn-primary:hover,
-.btn.btn-primary:active,
-.btn.btn-primary:focus {
-  color: #fff !important;
 }

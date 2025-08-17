@@ -9,10 +9,12 @@ sections:
     content:
       title: Contact
       text: |
-        The <strong> Institute of Human Genetics (IGH, UMR 9002) </strong> is located in Montpellier, in the south of France, and is affiliated to the french <strong> National Center for Scientific Research (CNRS) </strong> and to the <strong> University of Montpellier (UM)</strong>.
+        <p>
+        The <strong> Institute of Human Genetics (IGH, UMR 9002) </strong> is located in Montpellier, in the south of France, and is affiliated to the french National Center for Scientific Research (CNRS) and to the University of Montpellier (UM). <br><br>
           <a class="btn btn-primary" href="https://www.igh.cnrs.fr/en" target="_blank">
             <i class="fas fa-external-link-alt"></i> Institute Website
           </a>
+        </p>
       email: test@example.org
       phone: +33 4 34 35 99 70
       address:
