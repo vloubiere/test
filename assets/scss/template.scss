@@ -304,3 +304,55 @@ text-decoration: none !important;
   line-height: 1.4;
 }
 
+/* ===== MEET US PAGE ===== */
+/* ORCID brand green */
+$orcid-green: #A6CE39;
+
+/* People grid + profile headers (Academicons) */
+.network-icon .ai-orcid,
+a[aria-label="orcid"] .ai-orcid,
+a[aria-label="orcid"] {
+  color: $orcid-green !important;
+}
+
+/* Optional: slightly darker on hover/focus */
+.network-icon .ai-orcid:hover,
+a[aria-label="orcid"]:hover,
+a[aria-label="orcid"]:focus {
+  color: darken($orcid-green, 8%) !important;
+}
+
+/* If you happen to use Font Awesome’s ORCID icon instead of Academicons */
+.network-icon .fa-orcid,
+a[aria-label="orcid"] .fa-orcid {
+  color: $orcid-green !important;
+}
+
+.people-person {
+  display: flex;
+  flex-direction: row;
+  align-items: center;       /* keeps text aligned with image center */
+  text-align: center;          /* text feels cleaner left-aligned in row */
+  min-width: 180px;
+  max-width: 250px;
+  min-height: 180px;
+  max-height: 250px;
+  padding-bottom: 0.75rem;       /* add breathing room above image */
+}
+
+/* Avatar sizing + spacing */
+.people-person .avatar {
+  width: 120px;
+  height: 120px;
+  margin-right: 0.75rem;     /* slightly tighter than 1rem */
+  margin-top: 0;             /* no extra space above avatar itself */
+  margin-bottom: -1rem;
+  flex-shrink: 0;
+  border-radius: 50%;        /* if you want circular portraits */
+}
+
+/* Name + Role block */
+.people-person .portrait-title {
+  margin-top: 0.25rem;       /* reduce gap between image and text */
+  min-height: 3rem;          /* uniform text area without too much empty space */
+}

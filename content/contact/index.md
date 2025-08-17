@@ -9,24 +9,21 @@ sections:
     content:
       title: Contact
       text: |-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus augue non tempor egestas. Proin nisl nunc, dignissim in accumsan dapibus, auctor ullamcorper neque. Quisque at elit felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean eget elementum odio. Cras interdum eget risus sit amet aliquet. In volutpat, nisl ut fringilla dignissim, arcu nisl suscipit ante, at accumsan sapien nisl eu eros.
+        The <strong> Institute of Human Genetics (IGH, UMR 9002) </strong> is located in Montpellier, in the south of France, and is affiliated to the french National Center for Scientific Research (CNRS) and to the University of Montpellier (UM).
       email: test@example.org
-      phone: 888 888 88 88
+      phone: +33 4 34 35 99 70
       address:
-        street: 450 Serra Mall
-        city: Stanford
-        region: CA
-        postcode: '94305'
-        country: United States
-        country_code: US
+        street: 141 Rue de la Cardonille 
+        city: Montpellier
+        region: Hérault
+        postcode: '34094 cedex 5'
+        country: France
+        country_code: FR
       coordinates:
-        latitude: '37.4275'
-        longitude: '-122.1697'
-      directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
-      office_hours:
-        - 'Monday 10:00 to 13:00'
-        - 'Wednesday 09:00 to 10:00'
-      appointment_url: 'https://calendly.com'
+        latitude: '43.635302635500885'
+        longitude: '3.847264926015239'
+      directions: Enter from the west side of the campus and head to the IGH building, first stair.
+      
       #contact_links:
       #  - icon: comments
       #    icon_pack: fas
