@@ -272,80 +272,117 @@ text-decoration: none !important;
 }
 
 /* ===== RESEARCH PAGE ===== */
-/* Layout for research text + video */
-.research-flex {
-  display: flex;
-  align-items: flex-start;
+/* Blocks containing text */
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 1fr; /* 3 equal text cols + 1 image col */
   gap: 2rem;
+  align-items: start;
+  max-width: 2400px;
+  margin: 0 auto;
+  padding-left: 3vw;
+  padding-right: 3vw;
 }
 
-/* Make text take ~55% and video ~45% on desktop */
-.research-text {
-  flex: 1 1 55%;
-  max-width: 60%;
+.research-grid-text {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  grid-column: span 3; /* this tells our text wrapper spans the first 3 slots */
+  column-count: 3;     /* auto split paragraphs into 3 columns */
+  column-gap: 2rem;
+  text-align: justify;   /* 👈 this justifies the text */
+  margin-left: 0rem;
 }
 
-.research-video {
-  flex: 1 1 45%;
-  max-width: 40%;
+.research-grid-figure {
+  grid-column: 4;       /* illustration takes last slot */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Responsive 16:9 video */
-.video-container {
-  position: relative;
+.research-grid-figure .video-container {
   width: 100%;
-  aspect-ratio: 16 / 9; /* modern browsers */
+  max-width: 100%;
+  aspect-ratio: 16 / 9;   /* keep proportions */
+  background: #000;       /* optional: black letterbox background */
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.research-grid-figure .video-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+  position: absolute; /* fill the container */
+  top: 0;
+  left: 0;
+}
+
+.research-grid-figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.research-grid-figure figcaption {
+  font-size: 0.7rem;
+  color: #666;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* On mobile, collapse into one column */
+@media (max-width: 900px) {
+  .research-grid {
+    grid-template-columns: 1fr; /* one column */
+  }
+  .research-grid-text {
+    column-count: 1;
+  }
+  .research-grid-figure {
+    grid-column: auto;
+  }
+}
+
+/* ===== RESEARCH VIDEOS GRID ===== */
+.research-video-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 videos in one row */
+  gap: 2rem;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 2rem 3vw;
+}
+
+.research-video-grid .video-container {
+  width: 100%;
+  aspect-ratio: 16 / 9;
   background: #000;
   border-radius: 8px;
   overflow: hidden;
 }
 
-.video-container iframe {
-  position: absolute;
-  inset: 0;
+.research-video-grid .video-container iframe {
   width: 100%;
   height: 100%;
   border: 0;
-}
-
-/* Stack on mobile */
-@media (max-width: 900px) {
-  .research-flex {
-    flex-direction: column;
-  }
-  .research-text,
-  .research-video {
-    max-width: 100%;
-    flex-basis: 100%;
-  }
-}
-
-/* Anchoring links to research page */
-.anchor-target::before {
-  content: "";
   display: block;
-  height: 0;
-  margin-top: 0;
 }
 
+/* Collapse to single column on small screens */
 @media (max-width: 900px) {
-  .anchor-target:target::before {
-    height: 90px;   /* mobile header height */
-    margin-top: -90px;
+  .research-video-grid {
+    grid-template-columns: 1fr;
   }
 }
 
-/* Side figure */
-.research-figure {
-  margin: 0;
-  max-width: 800px;
-}
-.research-caption {
-  font-size: 1rem;
-  text-align: left !important;
-  color: #666;
-  margin-top: 8px;
-  line-height: 1.4;
+/* Methods slider */
+.slide h1 {
+  font-size: 2rem !important;  /* adjust to taste */
 }
 
 /* ===== MEET US PAGE ===== */
