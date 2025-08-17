@@ -12,7 +12,7 @@ weight: 202504
 superuser: false
 
 # Role/position
-role: Postdoc, now Postdoc at Botanical Institute of Barcelona (IBB-CSIC), Spain
+role: Postdoc, now Postdoc at IBB-CSIC, Barcelona, Spain
 
 # Organizations/Affiliations
 organizations:
