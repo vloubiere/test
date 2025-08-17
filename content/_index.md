@@ -63,7 +63,7 @@ sections:
             <a href="research/#research_topic_4">
               <img src="media/microscopy.png" alt="Role of Polycomb Group Proteins in development and cancer">
               <div class="research-grid-caption">
-                Methods used<br>in our lab
+                Methods used in our lab
               </div>
             </a>
           </div>
@@ -96,7 +96,7 @@ sections:
       
   - block: collection
     content:
-      title: Publications
+      title: Last publications
       count: 5
       filters:
         folders:
@@ -106,6 +106,7 @@ sections:
       columns: '1'
       spacing:
         padding: ['50px', '0', '40px', '0']
+      css_class: home-publications
   
   - block: markdown
     content:

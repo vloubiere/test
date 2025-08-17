@@ -76,7 +76,7 @@ h1.mb-0, h2.mb-0, h3.mb-0, h4.mb-0, h5.mb-0, h6.mb-0 {
   margin-top: 0.5rem !important;
   margin-bottom: -1.5rem !important;
 }
-h1 { font-size: 2.5rem; }
+h1 { font-size: 2.25rem; }
 h2 { font-size: 2rem; }
 h3 { font-size: 1.75rem; }
 h4 { font-size: 1.5rem; }
@@ -154,7 +154,7 @@ strong, b, .research-bold {
 
 /* Ensure images are always equal size and aligned at top */
 .research-flex-item img {
-  width: 300px;
+  width: 200px;
   height: auto;
   display: block;
   margin: 1rem auto; /* same margin on all sides for consistency */
@@ -163,7 +163,7 @@ strong, b, .research-bold {
 /* Captions are always centered, independent of image height */
 .research-grid-caption {
   margin: 0.5em auto 0 auto;
-  font-size: 1.25rem;
+  font-size: 1rem;
   max-width: 400px;
   word-break: break-word;
   white-space: normal;
@@ -185,7 +185,7 @@ strong, b, .research-bold {
 /* Existing card styles (keep) */
 .card-simple, .card {
   flex: 1 1 180px; /* Grow to fill row, min width 180px */
-  max-width: 350px;
+  max-width: 300px;
   min-width: 250px;
   margin: 0;
   font-size: 0.95rem;
@@ -233,11 +233,17 @@ text-decoration: none !important;
   cursor: pointer !important;
 }
 
+/* Tighter spacing between publication items */
+.home-publications .pub-list-item {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+
 /* ===== FUNDERS BUTTONS ===== */
 .funders-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 2rem;
+  gap: .5rem;
   justify-items: center;   /* center logo inside each cell */
   align-items: center;
   width: 100%;
@@ -285,7 +291,7 @@ text-decoration: none !important;
 }
 
 .research-grid-text {
-  font-size: 0.8rem;
+  font-size: 0.9rem !important;
   line-height: 1.5;
   grid-column: span 3; /* this tells our text wrapper spans the first 3 slots */
   column-count: 3;     /* auto split paragraphs into 3 columns */
@@ -385,7 +391,13 @@ text-decoration: none !important;
   font-size: 2rem !important;  /* adjust to taste */
 }
 
-/* ===== MEET US PAGE ===== */
+/* ===== PUBLICATIONS PAGE ===== */
+.page-publication-list .pub-list-item.view-citation {
+  margin-top: 1.5rem !important;
+  margin-bottom: 0 !important;
+}
+
+/* ===== PEOPLE PAGE ===== */
 /* ORCID brand green */
 $orcid-green: #A6CE39;
 
