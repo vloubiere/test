@@ -96,29 +96,6 @@ sections:
   - block: markdown
     content:
       title:
-      text: |
-        <h2 class="anchor-target">More Videos</h2>
-        <div class="research-video-grid">
-          <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/HFtGxda3I8E"
-                    frameborder="0"
-                    allowfullscreen
-                    title="Cavalli Lab Research Video 1"></iframe>
-          </div>
-          <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/-8_pjCVOS9M"
-                    frameborder="0"
-                    allowfullscreen
-                    title="Cavalli Lab Research Video 2"></iframe>
-          </div>
-        </div>
-    design:
-      spacing:
-        padding: ['20px','0','40px','0']
-
-  - block: markdown
-    content:
-      title:
       text: 
         <h2 id="research_topic_4" class="anchor-target">Methods used in our lab</h2>
     design:
@@ -167,4 +144,27 @@ sections:
       loop: true
       # Duration of transition between slides (in ms)
       interval: 5000
+
+  - block: markdown
+    content:
+      title:
+      text: |
+        <h2 class="anchor-target">More Videos</h2>
+        <div class="research-video-grid">
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/HFtGxda3I8E"
+                    frameborder="0"
+                    allowfullscreen
+                    title="Cavalli Lab Research Video 1"></iframe>
+          </div>
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/-8_pjCVOS9M"
+                    frameborder="0"
+                    allowfullscreen
+                    title="Cavalli Lab Research Video 2"></iframe>
+          </div>
+        </div>
+    design:
+      spacing:
+        padding: ['20px','0','40px','0']
 ---
