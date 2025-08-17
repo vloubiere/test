@@ -67,6 +67,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Add this to override Bootstrap's mb-0 class for all heading levels */
 h1.mb-0, h2.mb-0, h3.mb-0, h4.mb-0, h5.mb-0, h6.mb-0 {
+  margin-top: -0.5rem !important;
   margin-bottom: 0rem !important;
 }
 h1 { font-size: 2.5rem; }
@@ -123,6 +124,13 @@ strong, b, .research-bold {
 }
 
 /* ===== RESEARCH BUTTONS ===== */
+.home-research {  
+  margin-top: 0.25rem;
+}
+.home-research h1.mb-0 {
+  margin-bottom: -0.75rem !important;  /* reduce space below title */
+}
+
 .research-flex {
   display: flex;
   justify-content: space-between;
@@ -135,6 +143,7 @@ strong, b, .research-bold {
 .research-flex-item {
   display: flex;
   flex-direction: column;
+  margin-top: -1.25rem;
   align-items: center; /* Always center captions and content by default */
   width: 100%;
 }
@@ -179,8 +188,8 @@ strong, b, .research-bold {
 /* Existing card styles (keep) */
 .card-simple, .card {
   flex: 1 1 180px; /* Grow to fill row, min width 180px */
-  max-width: 400px;
-  min-width: 400px;
+  max-width: 350px;
+  min-width: 250px;
   margin: 0;
   font-size: 0.95rem;
   padding: 1rem;
