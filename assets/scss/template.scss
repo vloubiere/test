@@ -365,3 +365,13 @@ a[aria-label="orcid"] .fa-orcid {
   margin-top: 0.25rem;       /* reduce gap between image and text */
   min-height: 3rem;          /* uniform text area without too much empty space */
 }
+
+/* Ensure white text on primary buttons in all link states */
+.btn.btn-primary,
+.btn.btn-primary:link,
+.btn.btn-primary:visited,
+.btn.btn-primary:hover,
+.btn.btn-primary:active,
+.btn.btn-primary:focus {
+  color: #fff !important;
+}
