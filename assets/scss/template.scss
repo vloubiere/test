@@ -281,7 +281,7 @@ text-decoration: none !important;
 /* Blocks containing text */
 .research-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr) 1fr; /* 3 equal text cols + 1 image col */
+  grid-template-columns: 3fr 1.2fr; /* wider text, narrower figure */
   gap: 2rem;
   align-items: start;
   max-width: 2400px;
@@ -293,15 +293,15 @@ text-decoration: none !important;
 .research-grid-text {
   font-size: 0.9rem !important;
   line-height: 1.5;
-  grid-column: span 3; /* this tells our text wrapper spans the first 3 slots */
-  column-count: 3;     /* auto split paragraphs into 3 columns */
+  grid-column: 1;
+  column-count: 2; /* two text columns */
   column-gap: 2rem;
   text-align: justify;   /* 👈 this justifies the text */
   margin-left: 0rem;
 }
 
 .research-grid-figure {
-  grid-column: 4;       /* illustration takes last slot */
+  grid-column: 2;    /* instead of 4 */
   display: flex;
   flex-direction: column;
   align-items: center;
