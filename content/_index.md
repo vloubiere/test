@@ -9,10 +9,7 @@ sections:
     content:
       title: 
       subtitle: 
-      text: |
-        <div class="subtitle-text">
-          Epigenetic memory in development and cancer models
-        </div>
+      text:
     design:
       columns: '1'
       background:
@@ -32,7 +29,7 @@ sections:
     content:
       title: Research
       text: |
-        We use <strong>multidisciplinary approaches</strong> — single-cell omics, confocal and super-resolution microscopy, CRISPR-based genome editing, genomics, computational analyses, and physical modeling — to study how <strong>the 3D epigenome establishes and maintains transcriptional programs during development and disease</strong>, both in vivo (using <em>Drosophila</em> genetics) and in vitro (mouse cell lines). Our research focuses on three main topics:
+        We employ a <strong> wide range of molecular and in vivo approaches </strong> — single-cell omics, super-resolution microscopy, CRISPR editing, genomics, and physical modeling — to uncover how the <strong> 3D epigenome establishes and maintains transcriptional programs in development and disease</strong>. Our main research topics include:
 
         <div class="research-flex">
           <div class="research-flex-item left">

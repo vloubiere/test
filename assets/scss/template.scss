@@ -34,12 +34,13 @@
 .btn.btn-primary:focus {
   color: #fff !important;
 }
+.brand-cavalli { font-weight: 600 !important; } /* you already loaded 600 */
 
 /* ===== GLOBAL SETTINGS ===== */
 /* Width/padding of the website */
 .container, .container-fluid {
-  padding-left: 3vw;
-  padding-right: 3vw;
+  padding-left: 4vw;
+  padding-right: 4vw;
   max-width: 2400px;
   margin-left: auto;
   margin-right: auto;
@@ -76,37 +77,71 @@ h1.mb-0, h2.mb-0, h3.mb-0, h4.mb-0, h5.mb-0, h6.mb-0 {
   margin-top: 0.5rem !important;
   margin-bottom: -1.5rem !important;
 }
-h1 { font-size: 2.25rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.75rem; }
-h4 { font-size: 1.5rem; }
-h5 { font-size: 1.25rem; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1rem; }
 h6 { font-size: 1rem; }
 
 /* Bold text */
 strong, b, .research-bold {
-  font-weight: 600 !important;
+  font-weight: 400 !important;
 }
 
 /* ===== HOME PAGE BUTTON ===== */
 /* CAVALLI LAB homepage button */
+.navbar {
+  position: relative;          /* needed for the ::before subtitle */
+  padding-top: 2.5rem;         /* shorthand for top/bottom + left/right */
+  padding-bottom: 3rem;         /* shorthand for top/bottom + left/right */
+  padding-left: 4vw;         /* shorthand for top/bottom + left/right */
+  padding-right: 4vw;         /* shorthand for top/bottom + left/right */
+}
+
+/* Keep this ONLY if your navbar has an inner .container/.container-fluid */
+.navbar > .container,
+.navbar > .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar::before {
+  content: "Epigenetic memory in development and cancer";
+  position: absolute;
+  left: 4vw;                  /* align with page gutter */
+  bottom: 20px;
+  font-size: 0.8rem;
+  font-weight: 300;
+  opacity: 0.85;
+  line-height: 1;
+  white-space: nowrap;        /* remove if you want wrapping */
+  /* pointer-events: none; */  /* optional */
+}
+
 .navbar-brand {
   letter-spacing: 0.02em;
   font-size: 2.5rem;
+  font-weight: 300 !important;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding-top: 0;
 }
 
-/* IGH logo */
+.navbar-brand::before {
+  content: "Cavalli";
+  font-weight: 700 !important;
+  margin-right: 0.15em;
+}
+
 .navbar-brand::after {
-  content: '';
+  content: "";
   display: inline-block;
-  vertical-align: middle;
-  background: url('../logos/IGH_logo.png');
-  background-size: 85px 60px;
-  background-repeat: no-repeat;
-  width: 85px;
-  height: 65px;
-  margin-left: 20px;
-  margin-bottom: 5px;
+  background: url("../logos/IGH_logo.png") center/contain no-repeat;
+  width: 75px;
+  height: 50px;
+  margin-left: 15px;
 }
 
 /* ===== WADDINGTON LANDSCAPE BANNER ===== */
@@ -120,14 +155,7 @@ strong, b, .research-bold {
   overflow: hidden;
   display: block;
   max-width: 2400px;
-}
-.subtitle-text {
-  font-size: 1.75rem; /* or whatever size you prefer */
-  font-weight: 300;
-  color: #222;
-  margin-top: 0.5rem;
-  margin-left: 2rem;
-  margin-bottom: 1.5rem;
+  margin-top: 0rem;
 }
 
 /* ===== RESEARCH BUTTONS ===== */
@@ -140,8 +168,8 @@ strong, b, .research-bold {
   width: 100%;
   max-width: 2400px;               /* optional: consistent with .container */
   margin: 0 auto;
-  padding-left: 3vw;
-  padding-right: 3vw;
+  padding-left: 0vw;
+  padding-right: 0vw;
 }
 
 .research-flex-item {
@@ -247,6 +275,7 @@ text-decoration: none !important;
   justify-items: center;   /* center logo inside each cell */
   align-items: center;
   width: 100%;
+  padding-top: 1rem;
 }
 
 .funders-grid a {
