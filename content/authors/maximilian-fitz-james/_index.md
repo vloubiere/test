@@ -1,7 +1,6 @@
 ---
 # Display name
 title: Maximilian H. Fitz-James
-slug: maximilian-fitz-james
 
 # Full Name (for SEO)
 first_name: Maximilian H.
@@ -12,11 +11,11 @@ weight: 202507
 superuser: false
 
 # Role/position
-role: Postdoc, now PI at University of Oxford (Dept. of Biology)
+role: Postdoc
 
 # Organizations/Affiliations
 organizations:
-  - name: ''
+  - name: 'Now: PI at University of Oxford (Dept. of Biology)'
     url: ''
 
 # Short bio (displayed in user profile at end of posts)

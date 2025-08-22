@@ -1,7 +1,6 @@
 ---
 # Display name
 title: Ana-Maria Popmihaylova
-slug: ana-maria-popmihaylova
 
 # Full Name (for SEO)
 first_name: Ana-Maria

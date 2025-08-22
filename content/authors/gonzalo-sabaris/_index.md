@@ -1,7 +1,6 @@
 ---
 # Display name
 title: Gonzalo Sabarís
-slug: gonzalo-sabaris
 
 # Full Name (for SEO)
 first_name: Gonzalo  
@@ -12,15 +11,15 @@ weight: 202504
 superuser: false
 
 # Role/position
-role: Postdoc, now Postdoc at IBB-CSIC, Barcelona, Spain
+role: Postdoc 
 
 # Organizations/Affiliations
 organizations:
-  - name: ''
+  - name: "Now: Postdoc at IBB-CSIC, Barcelona, Spain"
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: ''
+bio:
 
 interests: ''
 

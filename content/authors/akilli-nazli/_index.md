@@ -1,7 +1,6 @@
 ---
 # Display name
 title: Akilli Nazli
-slug: akilli-nazli
 
 # Full Name (for SEO)
 first_name: Akilli  

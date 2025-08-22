@@ -17,6 +17,7 @@ authors:
   - Anne-Marie Martinez
   - giacomo-cavalli
 date: '2024-04-24'
+publication: '*Nature*'
 
 # Author notes (optional)
 author_notes:

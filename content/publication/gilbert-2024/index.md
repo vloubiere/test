@@ -17,34 +17,35 @@ authors:
 - Giacomo Cavalli
 - Lucas Waltzer
 - Laurence Vandel
-tags: []
-categories: []
 date: '2024-05-01'
-lastmod: 2025-08-17T20:32:37+02:00
-featured: false
-draft: false
+publication: '*Science Advances*'
 
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder.
-# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
+# Release data
+publishDate: '2025-08-17T18:32:37.200675Z'
+
+# Remove internal DOI link
+doi: ''
+
+# PDF file
+url_pdf: ''  # file must exist next to index.md
+
+# Here add all the button links needed
+links:
+  - name: DOI
+    url: 'http://dx.doi.org/10.1126/sciadv.adn5861'
+    icon: fas fa-external-link
+    icon_pack: fas
+  - name: Cite
+    url: 'cite_button.bib'
+    icon: fas fa-quote-right
+    icon_pack: fas
+
+# Unused options
+featured: true
 image:
   caption: ''
   focal_point: ''
   preview_only: false
-
-# Projects (optional).
-#   Associate this post with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
-#   Otherwise, set `projects = []`.
 projects: []
-publishDate: '2025-08-17T18:32:37.200675Z'
-publication_types:
-- '2'
-abstract: ''
-publication: '*Science Advances*'
-doi: 10.1126/sciadv.adn5861
-links:
-- name: URL
-  url: http://dx.doi.org/10.1126/sciadv.adn5861
+slides: ""
 ---

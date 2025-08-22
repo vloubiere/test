@@ -1,7 +1,6 @@
 ---
 # Display name
 title: Ivana Jerković
-slug: ivana-jerkovic
 
 # Full Name (for SEO)
 first_name: Ivana 
@@ -12,11 +11,11 @@ weight: 202503
 superuser: false
 
 # Role/position
-role: Postdoc, now Postdoc at Collège de France, Paris
+role: Postdoc
 
 # Organizations/Affiliations
 organizations:
-  - name: ''
+  - name: 'Now: Postdoc at Collège de France, Paris'
     url: ''
 
 # Short bio (displayed in user profile at end of posts)

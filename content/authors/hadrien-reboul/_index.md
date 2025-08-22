@@ -1,7 +1,6 @@
 ---
 # Display name
 title: Hadrien Reboul
-slug: hadrien-reboul
 
 # Full Name (for SEO)
 first_name: Hadrien  

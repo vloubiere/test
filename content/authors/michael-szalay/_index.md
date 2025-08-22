@@ -1,10 +1,9 @@
 ---
 # Display name
-title: Michael Szalay
-slug: michael-szalay
+title: Michael-Florian Szalay
 
 # Full Name (for SEO)
-first_name: Michael 
+first_name: Michael
 last_name: Szalay
 weight: 202502
 

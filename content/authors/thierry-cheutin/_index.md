@@ -1,7 +1,6 @@
 ---
 # Display name
 title: Thierry Cheutin
-slug: thierry-cheutin
 
 # Full Name (for SEO)
 first_name: Thierry

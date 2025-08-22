@@ -1,7 +1,6 @@
 ---
 # Display name
 title: Victoria Parreno
-slug: victoria-parreno
 
 # Full Name (for SEO)
 first_name: Victoria
@@ -12,11 +11,11 @@ weight: 202501
 superuser: false
 
 # Role/position
-role: PhD. Student, now Postdoc at IRB, Barcelona, spain
+role: PhD. Student
 
 # Organizations/Affiliations
 organizations:
-  - name: ''
+  - name: 'Now: Postdoc at IRB, Barcelona, spain'
     url: ''
 
 # Short bio (displayed in user profile at end of posts)

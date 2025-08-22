@@ -41,6 +41,7 @@ sections:
       show_interests: false
       show_role: true
       show_social: true
+      show_organizations: false
       spacing:
         padding: ['20px', '0', '100px', '0']
 
@@ -57,6 +58,7 @@ sections:
       show_interests: false
       show_role: true
       show_social: true
+      show_organizations: false
       spacing:
         padding: ['20px', '0', '100px', '0']
 ---

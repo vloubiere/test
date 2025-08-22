@@ -1,7 +1,6 @@
 ---
 # Display name
 title: Anne-Marie Martinez
-slug: anne-marie-martinez
 
 # Full Name (for SEO)
 first_name: Anne-Marie

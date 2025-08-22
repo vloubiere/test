@@ -1,7 +1,6 @@
 ---
 # Display name
 title: Marco Di Stefano
-slug: marco-di-stefano
 
 # Full Name (for SEO)
 first_name: Marco 
