@@ -69,11 +69,10 @@ sections:
       columns: '1'
       spacing:
         padding: ['40px', '0', '40px', '0']
-      css_class: home-research
 
   - block: collection
     content:
-      title: Latest News
+      title: News
       count: 5
       filters:
         author: ''
@@ -89,11 +88,10 @@ sections:
       columns: '5'   # Show 5 cards in a row
       spacing:
         padding: ['40px', '0', '40px', '0']
-      css_class: home-news
       
   - block: collection
     content:
-      title: Last publications
+      title: Publications
       count: 5
       filters:
         folders:

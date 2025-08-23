@@ -48,6 +48,7 @@ sections:
           captcha: false
     design:
       columns: '1'
+      css_class: contact-page
 
   - block: markdown
     content:
@@ -65,7 +66,5 @@ sections:
           position: center
           size: cover
           text_color_light: true
-      spacing:
-        padding: ['20px', '0', '20px', '0']
       css_class: fullscreen
 ---

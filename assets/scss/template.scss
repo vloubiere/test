@@ -73,9 +73,8 @@ html, body, *:not(i):not([class*="fa"]):not([class*="icon"]) {
 h1.mb-0, h2.mb-0, h3.mb-0, h4.mb-0, h5.mb-0, h6.mb-0 {
   font-family: 'Montserrat', Arial, sans-serif !important;
   letter-spacing: 0.02em  !important;
-  text-align: left !important;
-  margin-top: 0.5rem !important;
-  margin-bottom: -1.5rem !important;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
 }
 h1 { font-size: 2rem; }
 h2 { font-size: 1.75rem; }
@@ -84,9 +83,29 @@ h4 { font-size: 1.25rem; }
 h5 { font-size: 1rem; }
 h6 { font-size: 1rem; }
 
-/* Bold text */
-strong, b, .research-bold {
-  font-weight: 400 !important;
+/* ===== CENTER TITLES AND ADD LINE ===== */
+/* Make sure the heading container can host the line */
+.home-section .section-title,
+.home-section .section-heading {
+  position:relative !important;
+  display:block !important;
+  text-align: center;
+  margin:0 auto 1rem;
+  padding-bottom:.5rem;
+}
+
+/* Add line */
+.home-section .section-title::after,
+.home-section .section-heading::after {
+  content:"";
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+  bottom:-.15rem;           /* small gap below text */
+  width:100px;               /* shorten line here */
+  height:1px;
+  background:rgba(0,0,0,.25);
+  border-radius:2px;
 }
 
 /* ===== HOME PAGE BUTTON ===== */
@@ -159,6 +178,11 @@ strong, b, .research-bold {
 }
 
 /* ===== RESEARCH BUTTONS ===== */
+/* Bold text */
+strong, b, .research-bold {
+  font-weight: 400 !important;
+}
+
 .research-flex {
   display: flex;
   justify-content: space-between;  /* nice spacing */
@@ -199,11 +223,7 @@ strong, b, .research-bold {
   text-align: center;
 }
 
-/* ===== LATEST NEWS ===== */
-.home-news h1.mb-0 {
-  margin-bottom: 0rem !important;
-}
-
+/* ===== LATEST NEWS HOME PAGE ===== */
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -216,6 +236,7 @@ strong, b, .research-bold {
   max-width: 300px;
   min-width: 250px;
   margin: 0;
+  margin-top: 0;
   font-size: 0.95rem;
   padding: 1rem;
   box-sizing: border-box;
@@ -233,7 +254,6 @@ strong, b, .research-bold {
   background: #f5f5f5;
 }
 
-/* NEW: Add this for your news section */
 .col-12 {
   display: flex;
   flex-wrap: wrap;
@@ -241,7 +261,7 @@ strong, b, .research-bold {
   justify-content: flex-start; /* Align cards to the left */
 }
 
-/* ===== PUBLICATIONS ===== */
+/* ===== HOMEPAGE PUBLICATIONS ===== */
 /* Disable only the publication TITLE link, keep PDFs/buttons clickable */
 .pub-list-item a[href*="/publication/"]:not([href$=".pdf"]):not([href*=".pdf?"]):not([href*="/files/"]):not(.btn) {
 pointer-events: none !important;
@@ -267,7 +287,7 @@ text-decoration: none !important;
   margin-bottom: 0rem !important;
 }
 
-/* ===== FUNDERS BUTTONS ===== */
+/* ===== HOMEPAGE FUNDERS BUTTONS ===== */
 .funders-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -426,6 +446,12 @@ text-decoration: none !important;
   margin-bottom: 0 !important;
 }
 
+/* ===== NEWS PAGE ===== */
+/* Add space between the page title area and the first content block */
+.news-listing h1 {
+  margin-bottom: 3rem !important;
+}
+
 /* ===== PEOPLE PAGE ===== */
 /* ORCID brand green */
 $orcid-green: #A6CE39;
@@ -471,4 +497,9 @@ a[aria-label="orcid"] .fa-orcid {
   margin-bottom: -1.5rem;
   flex-shrink: 0;
   border-radius: 50%;        /* if you want circular portraits */
+}
+
+/* ===== CONTACT PAGE ===== */
+.contact-page h1 {
+  margin-top: -1rem !important;
 }
