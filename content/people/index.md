@@ -9,24 +9,21 @@ sections:
     content:
       title: 
       subtitle: 
-      text: |
-        <img class="tiny-banner-center" src="../media/group_picture.jpg" alt="Banner image">
-      #  <div class="subtitle-text">
-      #    Meet the team
-      #  </div>
+      text:
     design:
       columns: '1'
       background:
         image: 
-          filename: 
+          filename: "group_picture.jpg"
           filters:
             brightness: 1
           parallax: false
           position: center
-          size: contain
+          size: cover
           text_color_light: true
       spacing:
         padding: ['10px', '0', '10px', '0']
+      css_class: people-banner
 
   - block: people
     content:

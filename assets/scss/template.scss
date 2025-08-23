@@ -187,36 +187,51 @@ h6 { font-size: 1rem; }
 }
 
 /* ===== WADDINGTON LANDSCAPE BANNER ===== */
+/* Banner shell: always 96vw with 2vw margins */
+/* Banner shell: 2vw white gutters, dark sides behind when >2000px */
 .tiny-banner {
   position: relative;
   overflow: hidden;
-  display: block;
-  margin-left: 3vw;
-  margin-right: 3vw;
-  width: calc(100vw - 6vw);    /* subtract both margins */
+  width: 96vw;
+  margin-left: 2vw !important;
+  margin-right: 2vw !important;
 }
 
+/* Dark overlay (grey sides) */
 .tiny-banner::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.35); /* adjust alpha 0–1 for transparency */
+  background: rgba(0,0,0,0.35);
   pointer-events: none;
   z-index: 1;
 }
 
+/* Foreground image: exactly matches banner width, capped at 2000px */
 .tiny-banner-center {
-  width: 100vw;
-  aspect-ratio: 1600 / 450;
-  max-width: 100%;
-  height: auto;
-  min-height: 0;
-  margin: 0 auto;
-  overflow: hidden;
   display: block;
-  margin-top: 0rem;
-  position: relative;  /* add this */
-  z-index: 2;          /* and this */
+  width: 96vw !important;
+  max-width: 2000px !important;
+  aspect-ratio: 1600 / 450;
+  height: auto;
+  margin-left: -4vw !important;   /* align edges with 2vw gutters */
+  margin-right: -4vw !important;
+  position: relative;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+/* Mobile: switch to background cover, no overlay, hide <img> */
+@media (max-width: 900px) {
+  .tiny-banner {
+    width: 100vw;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    height: calc(100vw * 450 / 1600);
+    background: url("PATH/TO/your-banner.jpg") center/cover no-repeat;
+  }
+  .tiny-banner::after { display: none; }
+  .tiny-banner-center { display: none !important; }
 }
 
 /* ===== RESEARCH BUTTONS ===== */
@@ -511,6 +526,23 @@ text-decoration: none !important;
 }
 
 /* ===== PEOPLE PAGE ===== */
+.people-banner {
+  aspect-ratio: 1230 / 320;
+  max-width: 2000px;
+  width: calc(100% - 4vw);  /* 2vw gutter on each side */
+  margin: 0 auto;           /* center the block */
+  padding-inline: 0;        /* no extra inner padding */
+  position: relative;
+}
+
+/* Remove side margins on mobile */
+@media (max-width: 900px) {
+  .people-banner {
+    margin: 0;
+    width: 100vw;     /* full-bleed */
+  }
+}
+
 /* ORCID brand green */
 $orcid-green: #A6CE39;
 
