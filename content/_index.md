@@ -7,9 +7,10 @@ type: landing
 sections:
   - block: markdown
     content:
-      title: 
+      title:
       subtitle: 
-      text:
+      text: |
+        <img class="tiny-banner-center" src="media/Cavalli_v2_landscape_cropped_tiny.png" alt="Banner image">
     design:
       columns: '1'
       background:
@@ -19,10 +20,10 @@ sections:
             brightness: 1
           parallax: false
           position: center
-          size: contain
+          size: cover
           text_color_light: true
       spacing:
-        padding: ['20px', '0', '20px', '0']
+        padding: ['0', '0', '0', '0']
       css_class: tiny-banner
 
   - block: markdown

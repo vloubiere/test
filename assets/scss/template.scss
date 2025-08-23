@@ -41,7 +41,7 @@
 .container, .container-fluid {
   padding-left: 4vw;
   padding-right: 4vw;
-  max-width: 2400px;
+  max-width: 2000px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -119,25 +119,36 @@ h6 { font-size: 1rem; }
 }
 
 /* Keep this ONLY if your navbar has an inner .container/.container-fluid */
+/* Inner container keeps the site gutter and anchors the subtitle */
 .navbar > .container,
 .navbar > .container-fluid {
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  position: relative; /* anchor for ::before */
 }
 
-.navbar::before {
+/* Subtitle aligned to the inner container (same left as brand) */
+.navbar > .container::before,
+.navbar > .container-fluid::before {
   content: "Epigenetic memory in development and cancer";
   position: absolute;
-  left: 4vw;                  /* align with page gutter */
-  bottom: 15px;
+  left: 4vw;              /* matches the inner container gutter */
+  bottom: -5px;
   font-size: 0.8rem;
   font-weight: 300;
   opacity: 0.85;
   line-height: 1;
-  white-space: nowrap;        /* remove if you want wrapping */
+  white-space: nowrap;    /* remove if you want wrapping */
   /* pointer-events: none; */  /* optional */
 }
 
+/* Remove outer navbar padding to avoid double gutter (since inner has 4vw) */
+.navbar {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Brand styles (unchanged) */
 .navbar-brand {
   letter-spacing: 0.02em;
   font-size: 2.5rem;
@@ -148,12 +159,14 @@ h6 { font-size: 1rem; }
   padding-top: 0;
 }
 
+/* "Cavalli" prefix in bold */
 .navbar-brand::before {
   content: "Cavalli";
   font-weight: 700 !important;
   margin-right: 0.15em;
 }
 
+/* IGH logo after the brand */
 .navbar-brand::after {
   content: "";
   display: inline-block;
@@ -165,6 +178,24 @@ h6 { font-size: 1rem; }
 
 /* ===== WADDINGTON LANDSCAPE BANNER ===== */
 .tiny-banner {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  width: calc(100vw - 6vw);    /* subtract both margins */
+}
+
+.tiny-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35); /* adjust alpha 0–1 for transparency */
+  pointer-events: none;
+  z-index: 1;
+}
+
+.tiny-banner-center {
   width: 100vw;
   aspect-ratio: 1600 / 450;
   max-width: 100%;
@@ -173,8 +204,9 @@ h6 { font-size: 1rem; }
   margin: 0 auto;
   overflow: hidden;
   display: block;
-  max-width: 2400px;
   margin-top: 0rem;
+  position: relative;  /* add this */
+  z-index: 2;          /* and this */
 }
 
 /* ===== RESEARCH BUTTONS ===== */

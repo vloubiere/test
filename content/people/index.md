@@ -9,7 +9,8 @@ sections:
     content:
       title: 
       subtitle: 
-      text:
+      text: |
+        <img class="tiny-banner-center" src="../media/group_picture.jpg" alt="Banner image">
       #  <div class="subtitle-text">
       #    Meet the team
       #  </div>
@@ -17,7 +18,7 @@ sections:
       columns: '1'
       background:
         image: 
-          filename: group_picture.jpg
+          filename: 
           filters:
             brightness: 1
           parallax: false
@@ -25,8 +26,7 @@ sections:
           size: contain
           text_color_light: true
       spacing:
-        padding: ['20px', '0', '20px', '0']
-      css_class: tiny-banner
+        padding: ['10px', '0', '10px', '0']
 
   - block: people
     content:
