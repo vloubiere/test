@@ -112,10 +112,10 @@ h6 { font-size: 1rem; }
 /* CAVALLI LAB homepage button */
 .navbar {
   position: relative;          /* needed for the ::before subtitle */
-  padding-top: 2.5rem;         /* shorthand for top/bottom + left/right */
-  padding-bottom: 3rem;         /* shorthand for top/bottom + left/right */
-  padding-left: 4vw;         /* shorthand for top/bottom + left/right */
-  padding-right: 4vw;         /* shorthand for top/bottom + left/right */
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
+  padding-left: 4vw;
+  padding-right: 4vw;
 }
 
 /* Keep this ONLY if your navbar has an inner .container/.container-fluid */
