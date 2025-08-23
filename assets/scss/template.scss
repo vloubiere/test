@@ -176,6 +176,16 @@ h6 { font-size: 1rem; }
   margin-left: 15px;
 }
 
+/* For the phone */
+@media (max-width: 900px) {
+  /* Hide IGH logo appended to brand */
+  .navbar-brand::after { display: none !important; }
+
+  /* Hide the subtitle injected via ::before on the inner container */
+  .navbar > .container::before,
+  .navbar > .container-fluid::before { display: none !important; }
+}
+
 /* ===== WADDINGTON LANDSCAPE BANNER ===== */
 .tiny-banner {
   position: relative;
@@ -253,6 +263,22 @@ strong, b, .research-bold {
   white-space: normal;
   font-weight: 300;
   text-align: center;
+}
+
+/* For the phone */
+@media (max-width: 900px) {
+  .research-flex {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .research-flex-item {
+    flex: 1 1 100%;
+    margin-top: 0;
+  }
+  .research-flex-item img {
+    width: 60vw;   /* optional: scale images on mobile */
+    max-width: 320px;
+  }
 }
 
 /* ===== LATEST NEWS HOME PAGE ===== */
