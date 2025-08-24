@@ -1,25 +1,25 @@
 ---
 # Display name
-title: Michael-Florian Szalay
+title: Giorgio L. Papadopoulos
 
 # Full Name (for SEO)
-first_name: Michael-Florian
-last_name: Szalay
-weight: 202502
+first_name: Giorgio L.  
+last_name: Papadopoulos
+weight: 202401
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: PhD. Student
+role: Bioinformatician Postdoc
 
 # Organizations/Affiliations
 organizations:
-  - name: ''
+  - name: "Now: Facility member at IMBB_FoRTH"
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: ''
+bio:
 
 interests: ''
 
@@ -32,7 +32,7 @@ education: ''
 social:
   - icon: orcid
     icon_pack: ai
-    link: https://orcid.org/0000-0002-6310-0610
+    link: https://orcid.org/0000-0003-0199-0256
 
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.

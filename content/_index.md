@@ -151,6 +151,7 @@ sections:
     content:
       text: |
         {{% cta cta_link="./people/" cta_text="Meet the team →" %}}
+        {{% cta cta_link="./vacancies/" cta_text="Open positions →" %}}
     design:
       columns: '1'
 ---

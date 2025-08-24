@@ -1,11 +1,11 @@
 ---
 # Display name
-title: Michael-Florian Szalay
+title: Vincent Loubiere
 
 # Full Name (for SEO)
-first_name: Michael-Florian
-last_name: Szalay
-weight: 202502
+first_name: Vincent
+last_name: Loubiere
+weight: 201908
 
 # Is this the primary user of the site?
 superuser: false
@@ -15,7 +15,7 @@ role: PhD. Student
 
 # Organizations/Affiliations
 organizations:
-  - name: ''
+  - name: 'Now: Postdoc at Stark lab, IMP, Vienna'
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
@@ -32,7 +32,7 @@ education: ''
 social:
   - icon: orcid
     icon_pack: ai
-    link: https://orcid.org/0000-0002-6310-0610
+    link: https://orcid.org/0000-0002-3632-378X
 
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.

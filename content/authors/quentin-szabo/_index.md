@@ -1,11 +1,11 @@
 ---
 # Display name
-title: Michael-Florian Szalay
+title: Quentin Szabo
 
 # Full Name (for SEO)
-first_name: Michael-Florian
-last_name: Szalay
-weight: 202502
+first_name: Quentin
+last_name: Szabo
+weight: 202301
 
 # Is this the primary user of the site?
 superuser: false
@@ -15,11 +15,11 @@ role: PhD. Student
 
 # Organizations/Affiliations
 organizations:
-  - name: ''
+  - name: "Now: Postdoc at University of Zurich"
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: ''
+bio:
 
 interests: ''
 
@@ -32,7 +32,8 @@ education: ''
 social:
   - icon: orcid
     icon_pack: ai
-    link: https://orcid.org/0000-0002-6310-0610
+    link: https://orcid.org/0000-0002-3539-7875
+    
 
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.

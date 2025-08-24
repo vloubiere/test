@@ -17,11 +17,11 @@ appearance:
 
 marketing:
   seo:
-    site_type: Organization
+    site_type: Lab site
     local_business_type: ''
     org_name: ''
-    description: 'A highly-customizable Hugo research group theme powered by Wowchemy website builder.'
-    twitter: 'GetResearchDev'
+    description: 'Website of the Cavalli lab, IGH, Montpellier, France'
+    twitter: ''
   analytics:
     google_analytics: ''
     baidu_tongji: ''
@@ -74,7 +74,7 @@ features:
   privacy_pack:
     enable: false
   repository:
-    url: 'https://github.com/<username>/<repository>'
+    url: 'https://github.com/vloubiere/website/'
     content_dir: content
     branch: main
   avatar:
@@ -118,3 +118,5 @@ extensions:
 publications:
   date_format: January 2006
   citation_style: apa
+
+share: false

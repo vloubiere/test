@@ -195,7 +195,8 @@ h6 { font-size: 1rem; }
   width: 96vw;
   margin-left: 2vw !important;
   margin-right: 2vw !important;
-  margin-top: 0.5vw;
+  margin-top: 0.5vw !important;
+  margin-bottom: 0.5vw !important;
 }
 
 /* Dark overlay (grey sides) */
@@ -230,7 +231,8 @@ h6 { font-size: 1rem; }
     margin-right: 0 !important;
     height: calc(100vw * 450 / 1600);
     background: url("PATH/TO/your-banner.jpg") center/cover no-repeat;
-    margin-top: 2vw;
+    margin-top: 2vw !important;
+    margin-bottom: 2vw !important;
   }
   .tiny-banner::after { display: none; }
   .tiny-banner-center { display: none !important; }
@@ -334,6 +336,38 @@ strong, b, .research-bold {
   flex-wrap: wrap;
   gap: 1.5rem; /* Adjust spacing between cards */
   justify-content: flex-start; /* Align cards to the left */
+}
+
+/* Make the card a flex column container */
+.card-simple.view-card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Image comes first */
+.card-simple.view-card .img-hover-zoom,
+.card-simple.view-card a[href*="/post/"] > .img-hover-zoom {
+  order: 1;
+}
+
+/* Title comes second */
+.card-simple.view-card .article-title {
+  order: 2;
+}
+
+/* Authors/metadata go to the end */
+.card-simple.view-card .article-metadata {
+  order: 3;
+}
+
+/* Optional: Add some spacing adjustments */
+.card-simple.view-card .article-title {
+  margin-top: 1rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.card-simple.view-card .article-metadata {
+  margin-top: 0.5rem !important;
 }
 
 /* ===== HOMEPAGE PUBLICATIONS ===== */

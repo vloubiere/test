@@ -19,7 +19,7 @@ organizations:
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: 'test'
+bio: ''
 
 interests:
   - EMBO membership

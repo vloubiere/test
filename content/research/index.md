@@ -87,6 +87,9 @@ sections:
           <figure class="research-grid-figure">
             <img src="../media/FULL_ED.png" alt="Polycomb pathway schematic">
             <figcaption>Polycomb-mediated cancers in the developing eye-antennal imaginal disc of <em>Drosophila</em>.</figcaption>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/82G_T_3kHKk" frameborder="0" allowfullscreen title="Cavalli Lab Research Video"></iframe>
+            </div>
           </figure>
         </div>
     design:
@@ -159,6 +162,24 @@ sections:
           </div>
           <div class="video-container">
             <iframe src="https://www.youtube.com/embed/-8_pjCVOS9M"
+                    frameborder="0"
+                    allowfullscreen
+                    title="Cavalli Lab Research Video 2"></iframe>
+          </div>
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/5PEp1Ia4ROc"
+                    frameborder="0"
+                    allowfullscreen
+                    title="Cavalli Lab Research Video 2"></iframe>
+          </div>
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/lqy7Ye5Ac_4"
+                    frameborder="0"
+                    allowfullscreen
+                    title="Cavalli Lab Research Video 2"></iframe>
+          </div>
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/no0A3bRnask"
                     frameborder="0"
                     allowfullscreen
                     title="Cavalli Lab Research Video 2"></iframe>

@@ -6,11 +6,11 @@ title: Widespread activation of developmental gene expression characterized by P
 subtitle: ''
 summary: ''
 authors:
-- V. Loubiere
-- G. L. Papadopoulos
-- Q. Szabo
-- A-M. Martinez
-- G. Cavalli
+- Vincent Loubiere
+- Giorgio L. Papadopoulos
+- Quentin Szabo
+- Anne-Marie Martinez
+- Giacomo Cavalli
 tags: []
 categories: []
 date: '2020-01-01'

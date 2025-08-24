@@ -1,11 +1,11 @@
 ---
 # Display name
-title: Michael-Florian Szalay
+title: Sandrine Denaud
 
 # Full Name (for SEO)
-first_name: Michael-Florian
-last_name: Szalay
-weight: 202502
+first_name: Sandrine
+last_name: Denaud
+weight: 202501
 
 # Is this the primary user of the site?
 superuser: false
@@ -15,7 +15,7 @@ role: PhD. Student
 
 # Organizations/Affiliations
 organizations:
-  - name: ''
+  - name: Institute of Human Genetics, UMR9002
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
@@ -30,9 +30,6 @@ education: ''
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
-  - icon: orcid
-    icon_pack: ai
-    link: https://orcid.org/0000-0002-6310-0610
 
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
