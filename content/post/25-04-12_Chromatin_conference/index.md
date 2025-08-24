@@ -1,6 +1,6 @@
 ---
-title: Chromatin meets South
-subtitle: 'We are very pleased to announce that the 2025 ''Chromatin meets South'' meeting will take place at the CBI in Toulouse on the 12th and 13th of June. Save the date in your agendas! <br> [Registration {{< icon name="external-link-alt" pack="fas" >}}](https://www.chromatinmeetssouth2025.com/)'
+title: 'Conference: Chromatin meets South 2025'
+subtitle: 'We are very pleased to announce that the 2025 ''Chromatin meets South'' meeting will take place at the CBI in Toulouse on the 12th and 13th of June. Save the date in your agendas! <br> [Conference Website {{< icon name="external-link-alt" pack="fas" >}}](https://www.chromatinmeetssouth2025.com/)'
 date: 2025-04-12
 image:
   focal_point: 'top'
