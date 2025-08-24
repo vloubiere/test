@@ -20,7 +20,7 @@ sections:
         </p>
         <br>
         <p>
-          <b> Interested in joining for a PhD student or Postdoc? </b> Reach out with your CV and a few lines about what you’d like to explore — we’re always happy to discuss ideas!
+          <b> Interested in joining for a PhD or a Postdoc? </b> Reach out with your CV and a few lines about what you’d like to explore — we’re always happy to discuss ideas!
         </p>
         </h4>
     design:
