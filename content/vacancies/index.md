@@ -31,5 +31,5 @@ sections:
           position: center
           size: cover
           text_color_light: true
-      css_class: contact-page
+      css_class: fullscreen
 ---
